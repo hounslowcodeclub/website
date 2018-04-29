@@ -1,13 +1,252 @@
+
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<h1>Hounslow code club</h1>
+        <title>Parallax</title>
+        <style>
+            body,html{
+                height:100%;
+                margin:0;
+                font-size:16px;
+                font-family:"Lato" ,sans-serif;
+                font-weight:400;
+                line-height:1.8em;
+                color:#666;
+            }
 
-<p>My first website.</p>
-  
-  <p> members</p>
-  <h1>Coding Fun</h1>
 
-</body>
+            .pimg1, .pimg2, .pimg3{
+                position:relative;
+                opacity:0.90;
+                background-position:center;
+                background-size:cover;
+                background-repeat:no-repeat;
+                /*
+                fixed=parallax
+                scroll=normal
+                */
+                background-attachment:fixed;
+            }
+
+            .pimg1{
+                background-image:url(assets/mypic.jpg);
+                min-height:400px;
+
+            }
+            .pimg2{
+                background:#f4f4f4;
+                min-height:400px;
+
+            }
+            .pimg3{
+                background:#979A9A;
+                min-height:400px;
+
+            }
+            .section{
+                text-align:center;
+                padding:50px 80px;
+            }
+
+            .section-light{
+                background-color:#f4f4f4;
+                color:#666;
+            }
+            .section-dark{
+                background-color:#282e34;
+                color:#ddd;
+
+            }
+
+            .ptext{
+                position:absolute;
+                top:50%;
+                width:100%;
+                text-align:center;
+                color:#000;
+                font-size:27px;
+                letter-spacing:8px;
+                text-transform:uppercase;
+            }
+            .ptext .border{
+                background-color:#111;
+                color:#fff;
+                padding:10px;
+                border:2px outset yellow;
+            }
+            .ptext .border.trans{
+                background-color:#808B96;
+            }
+            iframe{
+                width: 100%;
+                height: 700px;
+            }
+
+            .dot{
+                position:relative;
+                width:7.5%;
+                height:70px;
+                border:2px inset yellow;
+                border-radius:30%;
+                margin:auto;
+                display:inline-block;
+
+
+               }
+            .red{
+                background-color:#922B21;
+            }
+            .black{
+                background-color:#7D3C98;
+            }
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+       <div class="pimg1">
+            <div class="ptext">
+              <span class="border" >
+                  H@$EEB WEB
+              </span>
+            </div>
+       </div>
+       <section class="section section-dark">
+          <h2>Section One</h2>
+
+          <p>For the HTML entry, our winner is Haseeb from Hounslow Library!
+          The judges were very impressed with Haseeb’s technical skills,
+          including this use of animated bubbles and an embedded YouTube video in his collage.
+          Plus they loved the choice of colours, and they felt like we really
+          got to know Haseeb’s favourite hobbies.</p>
+       </section>
+
+
+        <div class="pimg2">
+            <iframe src="https://www.youtube.com/embed/XhxmbQohC2U?autoplay=1&controls=0&loop=1&showinfo=0"></iframe>
+            <div class="ptext">
+              <span class="border trans" >
+                  My Videos
+              </span>
+            </div>
+       </div>
+       <section class="section section-light">
+           <h2>Section Two</h2>
+
+           <p>For the HTML entry, our winner is Haseeb from Hounslow Library!
+           The judges were very impressed with Haseeb’s technical skills,
+           including this use of animated bubbles and an embedded YouTube video in his collage.
+           Plus they loved the choice of colours, and they felt like we really
+           got to know Haseeb’s favourite hobbies.</p>
+       </section>
+
+        <div class="pimg3">
+            <div class="dot red"></div>
+            <div class="dot black"></div>
+            <div class="dot red"></div>
+            <div class="dot black"></div>
+            <div class="dot red"></div>
+            <div class="dot black"></div>
+            <div class="dot red"></div>
+            <div class="dot black"></div>
+            <div class="dot red"></div>
+            <div class="dot black"></div>
+            <div class="dot red"></div>
+            <div class="dot black"></div>
+
+
+            <div class="ptext">
+              <span class="border trans" >
+                  Photography
+              </span>
+            </div>
+       </div>
+       <section class="section section-dark">
+          <h2>Section Three</h2>
+
+          <p>For the HTML entry, our winner is Haseeb from Hounslow Library!
+          The judges were very impressed with Haseeb’s technical skills,
+          including this use of animated bubbles and an embedded YouTube video in his collage.
+          Plus they loved the choice of colours, and they felt like we really
+          got to know Haseeb’s favourite hobbies.</p>
+       </section>
+
+        <div class="pimg1">
+            <div class="ptext">
+              <span class="border" >
+                 H@$eeB's Web
+              </span>
+            </div>
+       </div>
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+
+        <script>
+            anime({
+                targets:'div.dot',
+                translateY:[
+                   {value:250, duration:1000,delay:12000},
+                   {value:0, duration:800}
+
+                    ],
+                    rotate:{
+                        value:'1turn',
+                        easing:'easeInOutSine',
+
+                    },
+                    delay:function(el,i,l){return i*1000}
+            });
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
+
+
