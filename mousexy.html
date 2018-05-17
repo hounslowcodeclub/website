@@ -2,58 +2,46 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
     <script>
-     var spot={
-         x:100,
-         y:50
 
-     }
-     var col={
-         r:255,
-         g:0,
-         b:0,
-         y:100
-     }
-     var siz={
-         w:50,
-         h:50
-     }
     function setup() {
         createCanvas(windowWidth,windowHeight);
-        background('#EBF5FB');
-
-
-
+         background(221,160,221);
     }
 
     function draw() {
-      spot.x=random(0,width);
-      spot.y=random(0,height);
+
+      // ellipseMode(CENTER);
+      // rectMode(CENTER);
+
+         //square
+         stroke('gray');
+        fill('blue');
+        rect(mouseX,mouseY,70,70);
 
 
-    //random(min,max)
-      col.r=random(0,255);
-      col.g=random(20,250);
-      col.b=random(0,150);
+/*
 
-      siz.w=random(20,100);
-      siz.h=random(20,100);
+    // moving ellipse
+        stroke('yellow');
+        fill('purple');
+        ellipse(mouseX, mouseY,50,50);
+*/
 
 
-     stroke(col.r,col.g,col.b);
-     fill(col.r,col.g,col.b,50);
-     ellipse(spot.x+150,spot.y+150,siz.w,siz.h);
 
-     stroke(col.r,col.g,col.b);
-     fill(col.r,col.g,col.b,50);
-     rect(spot.x,spot.y,siz.w,siz.h);
+/*
 
-     stroke(col.r,col.g,col.b);
-     fill(col.r,col.g,col.b,50);
-     triangle(spot.x+160,spot.y+100,spot.x+40,spot.y+80,spot.x+80,spot.y+160);
+        //triangle
+        stroke('yellow');
+        fill(39,134,34);
+        triangle(mouseX+60,mouseY+90,mouseX+60,mouseY+40,mouseX+10,mouseY+70);
+*/
 
 
     }
-
+    function mousePressed() {
+        background(250,250,200)
+    }
     </script>
   </head>
   <body>
