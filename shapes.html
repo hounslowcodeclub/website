@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+    <script>
+
+    function setup() {
+        createCanvas(windowWidth,windowHeight);
+        background('#EBF5FB');
+
+
+
+    }
+
+    function draw() {
+      fill('red');
+      //Rectangle and Square:
+
+      //rect(x,y,width,height)
+
+      //rect function makes a square with same width and height
+
+      rect(20,180,60,60);
+
+      //rect function makes a rectangle with different width and height
+
+      rect(20,100,150,60);
+
+      //Circle and Oval:
+
+      //ellipse(x,y,width,height)
+
+      //ellipse function makes a circle when width and height are same e.g w=30 and h=30
+      fill('yellow');
+      ellipse(90, 280, 60, 60);
+
+      //ellipse function makes an oval when width and height are different.
+
+      ellipse(180,280,70,50);
+      ellipse(270,270,50,70);
+
+
+      //Triangle :
+
+      //triangle(x1,y1,x2,y2,x3,y3)
+
+      fill('green');
+      triangle(150, 50, 300, 200, 450, 50);
+      triangle(300,300,450,150,600,300);
+
+  //line
+
+   //line(x1,y1,x2,y2)
+
+   stroke('purple');
+   line(450,320,800,320);
+
+   line(700,250,700,550);
+
+
+
+
+
+
+    }
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
