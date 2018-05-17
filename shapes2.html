@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+    <script>
+
+    function setup() {
+        createCanvas(windowWidth,windowHeight);
+        background('#EBF5FB');
+
+
+
+    }
+
+    function draw() {
+
+
+//Camera:
+      //camera body
+      fill('#AED6F1');
+      rect(170,20,200,150);
+      fill('white');
+      rect(300,25,50,15);
+      fill('black');
+      rect(190,10,30,10);
+      //camera lens
+      fill('white');
+      ellipse(270, 100, 50, 50);
+      ellipseMode(RADIUS);
+      fill('#5499C7');
+      ellipse(270, 100, 40, 40);
+      ellipseMode(RADIUS);
+      fill('white');
+      ellipse(270, 100, 20, 20);
+
+
+//Car
+      //head
+      fill('#85C1E9  ');
+      arc(420, 260, 80, 60, PI, PI);
+      fill('#D6EAF8  ');
+      arc(423, 260, 60, 40, PI, PI);
+     //body
+      fill('#3498DB');
+      rect(320,260,197,60);
+      //tyre1
+      ellipseMode(RADIUS);
+      fill('yellow');
+      ellipse(360,320,30,30);
+      ellipseMode(CENTER);
+      fill('#85C1E9  ');
+      ellipse(360,320,25,25);
+      //tyre2
+      ellipseMode(RADIUS);
+      fill('yellow');
+      ellipse(480,320,30,30);
+      ellipseMode(CENTER);
+      fill('#85C1E9  ');
+      ellipse(480,320,25,25);
+
+//Fish
+      fill('#85C1E9');
+      triangle(650,150,750,50,750,250);
+      triangle(750,150,770,100,770,200);
+      fill('yellow');
+      ellipse(675, 150, 10, 10);
+
+
+
+
+
+
+
+}
+
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
