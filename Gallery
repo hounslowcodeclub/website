@@ -5,14 +5,14 @@
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: DodgerBlue;
+  background-color: transparent;
 
 }
 
 .flex-container>div {
-  background-color: #f1f1f1;
-  width: 220px;
-  height:200px;
+  background-color: transparent;
+  width: 420px;
+  height:300px;
   margin: 10px;
   text-align: center;
   line-height: 22px;
@@ -20,8 +20,8 @@
 
 }
 img{
-    width:200px;
-    height:130px;
+    width:400px;
+    height:250px;
 
 }
 p{
@@ -35,33 +35,43 @@ p{
 <div class="flex-container">
   <div>
   <br>
-  <img src="assets/ " >
+  <img src="assets/scratch1.JPG " >
   
   </div>
  
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
-  <div>7</div>
-  <div>8</div>
-  <div>9</div>
-  <div>10</div>
-  <div>11</div>
-  <div>12</div>
-  <div>13</div>
-  <div>14</div>
-  <div>15</div>
-  <div>16</div>
-  <div>17</div>
-  <div>18</div>
-  <div>19</div>
-  <div>20</div>
-  <div>21</div>
-  <div>22</div>
-  <div>23</div>
-  <div>24</div>
-  <div>25</div>
+  <div>
+  <br>
+  <img src="assets/scratch2.JPG " >
+  </div>
+  <div>
+  <br>
+  <img src="assets/scratch3.JPG " >
+  </div>
+  <div>
+  <br>
+  <img src="assets/codewin.JPG " >
+  </div>
+  <div>
+  <br>
+  <img src="assets/codewin1.JPG " >
+  </div>
+  <div>
+  <br>
+  <img src="assets/codewin2.JPG " >
+  </div>
+  <div>
+  <br>
+  <img src="assets/aws1.JPG " >
+  </div>
+  <div>
+  <br>
+  <img src="assets/aws2.JPG " >
+  </div>
+  <div>
+  <br>
+  <img src="assets/fll.JPG " >
+  </div>
+  
 </div>
 
 
