@@ -29,15 +29,19 @@
       line(i,40,i+60,80);
       }  
  */
-      
+  /*   
       for(var y =20; y <= height; y += 20 ){
         for(var x =20; x <= width; x += 20){
           ellipse(x,y,10,10);
           line(x,y,width/2,height/2);
         }
       }
- 
-        
+ */
+    for( var y =32; y <= height;y+=8){
+      for( var x =12; x <= width; x+=15){
+        ellipse(x+y,y,16-y/10.0,16-y/10.0);
+      }
+    }
        
     }
 
