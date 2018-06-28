@@ -4,8 +4,8 @@
     <script>
     function setup() {
         createCanvas(windowWidth,windowHeight);
-        fill(' purple');
-        stroke('#F1948A  ');
+        fill(' red');
+        stroke('purple  ');
         
 
 
@@ -40,7 +40,7 @@
  */
     for( var y =10; y <= height;y+=20){
       for( var x =10; x <= width; x+=20){
-       triangle(x,y+10,x+30,y+60,x+50,y);
+       triangle(x,y,x+30,y+40,x+50,y);
         line(x,y,width/2,height/2);
       }
     }
