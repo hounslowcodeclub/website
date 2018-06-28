@@ -4,6 +4,7 @@
     <script>
     function setup() {
         createCanvas(windowWidth,windowHeight);
+        fill(255);
         strokeWeight(4);
 
 
@@ -29,8 +30,8 @@
       }  
  */
       
-      for(var y =20; y<= height-20; y += 10 ){
-        for(var x =20; x<= width-20; x+= 10){
+      for(var y =20; y<= height; y += 10 ){
+        for(var x =20; x<= width; x+= 10){
           ellipse(x,y,4,4);
           line(x,y,width/2,height/2);
         }
